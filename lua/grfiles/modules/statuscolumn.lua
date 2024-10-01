@@ -78,7 +78,10 @@ function M.setup(userTable)
    vim.api.nvim_create_autocmd('Filetype', {
       pattern = combineTable(userTable.disabled_statuscolum_ft, opts_default.disabled_statuscolum_ft),
       callback = function()
-         vim.opt_local.statuscolumn = ''
+         vim.opt_local.relativenumber = false
+         vim.opt_local.number = false
+         vim.opt_local.signcolumn = 'no'
+         vim.opt_local.colorcolumn = ''
       end,
    })
 end
