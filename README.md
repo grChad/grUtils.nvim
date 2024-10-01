@@ -45,3 +45,17 @@ cmp.setup({
     formatting = { format = require('gr-utils').cmp_format },
 })
 ```
+
+#### Toggle Bolean
+
+Una funcion que alterna valores como:
+```lua
+{ 'true', 'false' }
+{ 'yes', 'no' }
+{ 'on', 'off' }
+```
+
+Se puede usar junto con un atajo de teclado:
+```lua
+vim.keymap.set ('n', '<leader>b', "<cmd>lua require('gr-utils').toggle_bool()<CR>", { desc = 'Toggle boolean' })
+```
