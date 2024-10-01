@@ -24,7 +24,7 @@ Opciones por defecto. Puedes modificar parcial o totalmente todas las opciones.
 
 ```lua
 local grUtils = require('gr-utils')
-grUtils.statuscolumn.setup(
+grUtils.statuscolumn.setup({
    disabled_statuscolum_ft = {
       'alpha', 'dashboard', 'NvimTree', 'dashboard', 'Outline', 'help', 'lspinfo',
       'packer', 'qf', 'startify', 'startuptime', 'vimfiler', 'vimhelp', 'viminfo',
